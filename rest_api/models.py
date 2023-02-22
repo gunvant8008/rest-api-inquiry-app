@@ -12,9 +12,7 @@ class Inquiry(models.Model):
     email=models.EmailField(default='')
     description=models.CharField(max_length=255)
     added_on = models.DateTimeField(auto_now_add=True)
-    lead_type = models.CharField(max_length=100, choices=(('Okay', 'Okay'),
-   ('Good', 'Good'), ('VGood', 'VGood')
-   ))
+    # lead_type = models.CharField(max_length=100)
     #source = models.Choices()
     is_member=models.BooleanField(default=False)
     is_active_member=models.BooleanField(default=False)

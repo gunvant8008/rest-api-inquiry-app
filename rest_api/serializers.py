@@ -4,7 +4,7 @@ from .models import Inquiry, Bill, BillDetails, Employee, Product
 class InquirySerializer(serializers.ModelSerializer):
     class Meta:
         model = Inquiry
-        fields = ['id', 'company_name', 'company_owner', 'manager', 'address', 'contact_no', 'email', 'added_on', 'lead_type', 'is_member', 'is_active']
+        fields = ['id', 'company_name', 'company_owner', 'manager', 'address', 'contact_no', 'email', 'added_on', 'is_member', 'is_active_member']
 
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
